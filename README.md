@@ -54,5 +54,5 @@ You're good to go !
 
 ## Sample Demo
 from within src/Sample is a small working demo
-
+![](https://i.imgur.com/V8CbWYR.gif)
  
