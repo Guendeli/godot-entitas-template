@@ -5,7 +5,7 @@ A template to work with Entitas within Godot, including a Sample
 - Godot Version: [3.5.2 LTS](https://godotengine.org/)
 
 ## Godot Editor Setup
-- Editor Settings -> Builds: MSBuild (VS Build Tool)
+- Editor Settings -> Builds: Tested with both MSBuild (VS Build Tool) and dotnet CLI
 
 ## Steps to setup from scratch
 if you want to setup Jenny and Entitas for your godot project here are the steps
