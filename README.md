@@ -15,15 +15,16 @@ Create an empty godot project, and generate the CS files from Project->Tools->C#
 
 ### Getting Entitas
 
-Get the release version of entitas.zip and Jenny.zip from https://github.com/sschmid/Entitas/releases/tag/1.14.1
+Get the release version of entitas.zip and Jenny.zip from: https://github.com/sschmid/Entitas/releases/tag/1.14.1
+
 Extract the content of Jenny.zip at the root of your project, and Entitas.zip somewhere in your code project 
 
 ### Setup Jenny
 
-Setup [Jenny.properties](https://github.com/Guendeli/godot-entitas-template/blob/master/Jenny.properties). Difference from Unity are
+Setup [Jenny.properties](https://github.com/Guendeli/godot-entitas-template/blob/master/Jenny.properties). Difference from Unity are:
 - Jenny.Plugins.ProjectPath need to point to you project .csproj file instead of Assembly-CSharp.csproj
 - remove "Jenny.Plugins.UpdateCsprojPostProcessor" from Jenny.PostProcessor or it will cause misc errors with Godot Editor as well as subconsequent jenny executions
-- Setup Jenny.SearchPaths to point to your Folder where Entitas.dll exists as well as jenny
+- Setup Jenny.SearchPaths to point to your Folders where Entitas.dll exists as well as jenny
 
 ### Setup Rider/Visual Studio
 
