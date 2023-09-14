@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Godot.NET.Sdk/3.3.0">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>godotentitas</RootNamespace>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <DisableHandlePackageFileConflicts>true</DisableHandlePackageFileConflicts>
+    <_TargetFrameworkDirectories>Jenny.Plugins.ReferenceAssemblyPathsPreProcessor</_TargetFrameworkDirectories>
+    <_FullFrameworkReferenceAssemblyPaths>Jenny.Plugins.ReferenceAssemblyPathsPreProcessor</_FullFrameworkReferenceAssemblyPaths>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DesperateDevs.Caching">
+      <HintPath>src\Entitas\DesperateDevs\DesperateDevs.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="DesperateDevs.Extensions">
+      <HintPath>src\Entitas\DesperateDevs\DesperateDevs.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DesperateDevs.Reflection">
+      <HintPath>src\Entitas\DesperateDevs\DesperateDevs.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="DesperateDevs.Serialization">
+      <HintPath>src\Entitas\DesperateDevs\DesperateDevs.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="DesperateDevs.Threading">
+      <HintPath>src\Entitas\DesperateDevs\DesperateDevs.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="Entitas">
+      <HintPath>src\Entitas\Entitas\Entitas.dll</HintPath>
+    </Reference>
+    <Reference Include="Entitas.CodeGeneration.Attributes">
+      <HintPath>src\Entitas\Entitas\Entitas.CodeGeneration.Attributes.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
