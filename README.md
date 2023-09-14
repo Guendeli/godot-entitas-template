@@ -25,6 +25,7 @@ Setup [Jenny.properties](https://github.com/Guendeli/godot-entitas-template/blob
 - Jenny.Plugins.ProjectPath need to point to you project .csproj file instead of Assembly-CSharp.csproj
 - remove "Jenny.Plugins.UpdateCsprojPostProcessor" from Jenny.PostProcessor or it will cause misc errors with Godot Editor as well as subconsequent jenny executions
 - Setup Jenny.SearchPaths to point to your Folders where Entitas.dll exists as well as jenny
+- Setup Jenny.Plugins.TargetDirectory to point at where should the generated files be.
 
 ### Setup Rider/Visual Studio
 
