@@ -57,4 +57,7 @@ You're good to go !
 ## Sample Demo
 from within src/Sample is a small working demo
 ![](https://i.imgur.com/V8CbWYR.gif)
- 
+
+## Known Issues
+
+When exporting the project Godot doesn't copy the .dll's in the build output folder.
