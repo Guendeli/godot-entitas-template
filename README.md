@@ -1,4 +1,4 @@
-# Entitas 1.14 Template for Godot 3.x LTS
+# Entitas 1.14 Template for Godot 4.x
 A template to work with Entitas within Godot, including a Sample
 
 - Entitas: https://github.com/sschmid/Entitas
