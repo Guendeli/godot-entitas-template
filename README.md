@@ -47,10 +47,12 @@ Also add these two flags in your <PropertyGroup>
 
 ### Jenny Gen:
 
-To run Jenny, open a console from your project root folder and run
+To run Jenny, open a console from your project root folder and run, or execute jennygen.bat
 ```
 dotnet ./Jenny/Jenny.Generator.Cli.dll gen
 ```
+
+
 
 You're good to go !
 
