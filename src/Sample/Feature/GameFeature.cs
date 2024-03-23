@@ -1,6 +1,6 @@
-﻿using Entitas;
+using Entitas;
     
-public class GameFeature : Feature
+public partial class GameFeature : Feature
 {
     public GameFeature(Contexts contexts) 
     {

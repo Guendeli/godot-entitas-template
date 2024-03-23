@@ -1,7 +1,7 @@
-﻿
+
 using Entitas;
 
-public class EntityDisposeSystem : ICleanupSystem
+public partial class EntityDisposeSystem : ICleanupSystem
 {
     private readonly GameContext _context;
     private IGroup<GameEntity> _group;

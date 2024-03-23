@@ -1,9 +1,9 @@
-﻿
+
 using System.Collections.Generic;
 using Entitas;
 using Godot;
 
-public class PlayerRenderInitSystem : ReactiveSystem<GameEntity>
+public partial class PlayerRenderInitSystem : ReactiveSystem<GameEntity>
 {
     private readonly GameContext _context;
     private const string PREFAB_NAME = "res://src/Prefabs/player.tscn";
@@ -31,7 +31,7 @@ public class PlayerRenderInitSystem : ReactiveSystem<GameEntity>
             Node rootScene = _context.scene.Root;
             if (rootScene != null)
             {
-                Node player = GD.Load<PackedScene>(PREFAB_NAME).Instance() as Node;
+                Node player = GD.Load<PackedScene>(PREFAB_NAME).Instantiate();
                 if (player != null)
                 {
                     rootScene.AddChild(player);
@@ -43,7 +43,7 @@ public class PlayerRenderInitSystem : ReactiveSystem<GameEntity>
     }
 }
 
-public class PlayerPositionApplySystem : IExecuteSystem
+public partial class PlayerPositionApplySystem : IExecuteSystem
 {
     private readonly GameContext _context;
     private IGroup<GameEntity> _group;
@@ -58,11 +58,11 @@ public class PlayerPositionApplySystem : IExecuteSystem
     {
         foreach (GameEntity entity in _group.GetEntities())
         {
-            Spatial gameObject = (Spatial)entity.view.GameObject;
+            Node3D gameObject = (Node3D)entity.view.GameObject;
             if (gameObject == null)
                 continue;
 
-            gameObject.Translation = entity.position.Position;
+            gameObject.Position = entity.position.Position;
         }
     }
 }

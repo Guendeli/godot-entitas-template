@@ -4,38 +4,38 @@ using Entitas;
 using Entitas.CodeGeneration.Attributes;
 
 [Game]
-public class PlayerComponent : IComponent
+public partial class PlayerComponent : IComponent
 {
     
 }
 
 [Game]
-public class PositionComponent : IComponent
+public partial class PositionComponent : IComponent
 {
-    public Vector3  Position;
+    public Godot.Vector3  Position;
 }
 
 [Game]
-public class ViewComponent : IComponent
+public partial class ViewComponent : IComponent
 {
-    public Node GameObject;
+    public Godot.Node GameObject;
 }
 
 [Game][Unique]
-public class SceneComponent : IComponent
+public partial class SceneComponent : IComponent
 {
-    public Node Root;
+    public Godot.Node Root;
 }
 
 [Game]
-public class DisposeComponent : IComponent
+public partial class DisposeComponent : IComponent
 {
     
 }
 
 [Game][Unique]
 [Serializable]
-public class CurrentTickComponent : IComponent
+public partial class CurrentTickComponent : IComponent
 {
     public int Tick;
     

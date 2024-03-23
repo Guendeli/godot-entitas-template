@@ -2,7 +2,7 @@ using Godot;
 using System;
 using Entitas;
 
-public class Test : Node
+public partial class Test : Node
 {
     // Declare member variables here. Examples:
     // private int a = 2;

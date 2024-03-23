@@ -1,8 +1,8 @@
-﻿
+
 using Entitas;
 using Godot;
 
-public class PlayerInitSystem : IInitializeSystem
+public partial class PlayerInitSystem : IInitializeSystem
 {
     private readonly GameContext _context;
 

@@ -1,9 +1,9 @@
-﻿
+
 using System;
 using Entitas;
 using Godot;
 
-public class PlayerMovementSystem : IExecuteSystem
+public partial class PlayerMovementSystem : IExecuteSystem
 {
     private readonly GameContext _context;
     private IGroup<GameEntity> _group;

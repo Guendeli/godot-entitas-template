@@ -2,7 +2,7 @@ using Godot;
 using System;
 using Entitas;
 
-public class Bootstrap : Node
+public partial class Bootstrap : Node
 {
     private Contexts _contexts;
     private Systems _feature;
@@ -12,7 +12,7 @@ public class Bootstrap : Node
     {
         _contexts = Contexts.sharedInstance;
         
-        var rootScene = GetTree().Root;
+        var rootScene = this;
         _contexts.game.ReplaceScene(rootScene);
         
         _feature = new GameFeature(_contexts);
@@ -23,7 +23,7 @@ public class Bootstrap : Node
     }
 
   // Called every frame. 'delta' is the elapsed time since the previous frame.
-  public override void _Process(float delta)
+  public override void _Process(double delta)
   {
       if (_feature != null)
       {

@@ -1,8 +1,8 @@
-﻿using Entitas;
+using Entitas;
 using Godot;
 using System;
 
-public class TickInitializeSystem : IInitializeSystem
+public partial class TickInitializeSystem : IInitializeSystem
 {
     private readonly GameContext _context;
     private const int TARGET_FRAME_RATE = 60;
@@ -25,7 +25,7 @@ public class TickInitializeSystem : IInitializeSystem
     }
 }
 
-public class TickUpdateSystem : IExecuteSystem
+public partial class TickUpdateSystem : IExecuteSystem
 {
     private readonly GameContext _context;
     private const float STEP = 16 / 60f;
